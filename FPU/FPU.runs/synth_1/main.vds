@@ -1,0 +1,742 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Sun Nov  3 00:53:59 2024
+# Process ID: 15848
+# Current directory: E:/FPU/FPU.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/FPU/FPU.runs/synth_1/main.vds
+# Journal file: E:/FPU/FPU.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-AI2GDSL
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+# CPU Frequency     :2099 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :51457 MB
+# Swap memory       :7516 MB
+# Total Virtual     :58973 MB
+# Available Virtual :47406 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
+create_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 664.527 ; gain = 202.469
+Command: read_checkpoint -auto_incremental -incremental E:/FPU/FPU.srcs/utils_1/imports/synth_1/main.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/FPU/FPU.srcs/utils_1/imports/synth_1/main.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top main -part xa7z020clg400-1I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7z020'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18824
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1124.062 ; gain = 449.477
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'main' [E:/FPU/FPU.srcs/sources_1/new/main.vhd:16]
+INFO: [Synth 8-3491] module 'add' declared at 'E:/FPU/FPU.srcs/sources_1/new/add.vhd:9' bound to instance 'u1' of component 'add' [E:/FPU/FPU.srcs/sources_1/new/main.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'add' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:18]
+WARNING: [Synth 8-614] signal 'res_mes_ex' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/add.vhd:52]
+WARNING: [Synth 8-614] signal 'res_exp' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/add.vhd:52]
+WARNING: [Synth 8-614] signal 'res_mes' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/add.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'add' (0#1) [E:/FPU/FPU.srcs/sources_1/new/add.vhd:18]
+INFO: [Synth 8-3491] module 'min' declared at 'E:/FPU/FPU.srcs/sources_1/new/min.vhd:9' bound to instance 'u2' of component 'min' [E:/FPU/FPU.srcs/sources_1/new/main.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'min' [E:/FPU/FPU.srcs/sources_1/new/min.vhd:18]
+WARNING: [Synth 8-614] signal 'res_mes_ex' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/min.vhd:52]
+WARNING: [Synth 8-614] signal 'res_exp' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/min.vhd:52]
+WARNING: [Synth 8-614] signal 'res_mes' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/min.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'min' (0#1) [E:/FPU/FPU.srcs/sources_1/new/min.vhd:18]
+INFO: [Synth 8-3491] module 'mul' declared at 'E:/FPU/FPU.srcs/sources_1/new/mul.vhd:9' bound to instance 'u3' of component 'mul' [E:/FPU/FPU.srcs/sources_1/new/main.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'mul' [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:18]
+WARNING: [Synth 8-614] signal 'res_mes_ex' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:51]
+WARNING: [Synth 8-614] signal 'res_exp' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:51]
+WARNING: [Synth 8-614] signal 'res_mes' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'mul' (0#1) [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:18]
+INFO: [Synth 8-3491] module 'div' declared at 'E:/FPU/FPU.srcs/sources_1/new/div.vhd:8' bound to instance 'u4' of component 'div' [E:/FPU/FPU.srcs/sources_1/new/main.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'div' [E:/FPU/FPU.srcs/sources_1/new/div.vhd:17]
+WARNING: [Synth 8-7193] Integer conversion function is truncating input [E:/FPU/FPU.srcs/sources_1/new/div.vhd:53]
+WARNING: [Synth 8-7193] Integer conversion function is truncating input [E:/FPU/FPU.srcs/sources_1/new/div.vhd:53]
+WARNING: [Synth 8-614] signal 'res_mes_ex' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/div.vhd:50]
+WARNING: [Synth 8-614] signal 'res_exp' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/div.vhd:50]
+WARNING: [Synth 8-614] signal 'res_mes' is read in the process but is not in the sensitivity list [E:/FPU/FPU.srcs/sources_1/new/div.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'div' (0#1) [E:/FPU/FPU.srcs/sources_1/new/div.vhd:17]
+INFO: [Synth 8-226] default block is never used [E:/FPU/FPU.srcs/sources_1/new/main.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'main' (0#1) [E:/FPU/FPU.srcs/sources_1/new/main.vhd:16]
+WARNING: [Synth 8-3848] Net res_mes in module/entity div does not have driver. [E:/FPU/FPU.srcs/sources_1/new/div.vhd:21]
+WARNING: [Synth 8-7129] Port A[62] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[61] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[60] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[59] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[58] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[57] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[56] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[55] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[54] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[53] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[52] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[51] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[50] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[49] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[48] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[47] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[46] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[45] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[44] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[43] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[42] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[41] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[40] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[39] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[38] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[37] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[36] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[35] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[34] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[33] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[32] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[31] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[30] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[29] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[28] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[27] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[26] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[25] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[24] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[23] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[22] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[21] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[20] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[19] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[18] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[17] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[16] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[15] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[14] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[13] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[12] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[11] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[10] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[9] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[8] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[7] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[6] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[5] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[4] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[3] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[2] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[1] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port A[0] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[62] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[61] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[60] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[59] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[58] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[57] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[56] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[55] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[54] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[53] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[52] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[51] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[50] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[49] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[48] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[47] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[46] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[45] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[44] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[43] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[42] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[41] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[40] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[39] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[38] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[37] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[36] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[35] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[34] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[33] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[32] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[31] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[30] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[29] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[28] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[27] in module div is either unconnected or has no load
+WARNING: [Synth 8-7129] Port B[26] in module div is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1238.711 ; gain = 564.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1238.711 ; gain = 564.125
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7z020clg400-1I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1238.711 ; gain = 564.125
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7z020clg400-1I
+WARNING: [Synth 8-3936] Found unconnected internal register 'res_mes_reg' and it is trimmed from '53' to '52' bits. [E:/FPU/FPU.srcs/sources_1/new/add.vhd:75]
+WARNING: [Synth 8-3936] Found unconnected internal register 'res_mes_reg' and it is trimmed from '53' to '52' bits. [E:/FPU/FPU.srcs/sources_1/new/min.vhd:76]
+WARNING: [Synth 8-3936] Found unconnected internal register 'res_mes_reg' and it is trimmed from '53' to '52' bits. [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:77]
+WARNING: [Synth 8-327] inferring latch for variable 'res_mes_reg' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:75]
+WARNING: [Synth 8-327] inferring latch for variable 'res_exp_reg' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'res_mes_ex_reg' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:66]
+WARNING: [Synth 8-327] inferring latch for variable 'compv_reg' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:48]
+WARNING: [Synth 8-327] inferring latch for variable 'B_mes_ex_reg' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'A_mes_ex_reg' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-327] inferring latch for variable 'comp_reg' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:49]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [E:/FPU/FPU.srcs/sources_1/new/min.vhd:78]
+WARNING: [Synth 8-327] inferring latch for variable 'res_mes_reg' [E:/FPU/FPU.srcs/sources_1/new/min.vhd:76]
+WARNING: [Synth 8-327] inferring latch for variable 'res_exp_reg' [E:/FPU/FPU.srcs/sources_1/new/min.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'res_mes_ex_reg' [E:/FPU/FPU.srcs/sources_1/new/min.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'compv_reg' [E:/FPU/FPU.srcs/sources_1/new/min.vhd:48]
+WARNING: [Synth 8-327] inferring latch for variable 'B_mes_ex_reg' [E:/FPU/FPU.srcs/sources_1/new/min.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'A_mes_ex_reg' [E:/FPU/FPU.srcs/sources_1/new/min.vhd:40]
+WARNING: [Synth 8-327] inferring latch for variable 'comp_reg' [E:/FPU/FPU.srcs/sources_1/new/min.vhd:49]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'res_mes_reg' [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:64]
+WARNING: [Synth 8-327] inferring latch for variable 'res_exp_reg' [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 'res_mes_ex_reg' [E:/FPU/FPU.srcs/sources_1/new/mul.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'result_reg' [E:/FPU/FPU.srcs/sources_1/new/div.vhd:67]
+WARNING: [Synth 8-327] inferring latch for variable 'res_exp_reg' [E:/FPU/FPU.srcs/sources_1/new/div.vhd:55]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1238.711 ; gain = 564.125
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input  106 Bit       Adders := 1     
+	   3 Input  105 Bit       Adders := 1     
+	   2 Input   31 Bit       Adders := 2     
+	   3 Input   11 Bit       Adders := 4     
+	   2 Input   11 Bit       Adders := 6     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Multipliers : 
+	              53x53  Multipliers := 1     
++---Muxes : 
+	   2 Input  106 Bit        Muxes := 6     
+	   2 Input  105 Bit        Muxes := 6     
+	   3 Input  105 Bit        Muxes := 2     
+	   4 Input   64 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Device 21-9227] Part: xa7z020clg400-1I does not have CEAM library.
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP u3/multOp, operation Mode is: A*B.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: Generating DSP u3/multOp, operation Mode is: PCIN+A*B.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: Generating DSP u3/multOp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: Generating DSP u3/multOp, operation Mode is: A*B.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: Generating DSP u3/multOp, operation Mode is: PCIN+A*B.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: Generating DSP u3/multOp, operation Mode is: PCIN+A*B.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: Generating DSP u3/multOp, operation Mode is: A*B.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: Generating DSP u3/multOp, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: Generating DSP u3/multOp, operation Mode is: PCIN+A*B.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+DSP Report: operator u3/multOp is absorbed into DSP u3/multOp.
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[104]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[104]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[103]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[103]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[102]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[102]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[101]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[101]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[100]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[100]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[99]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[99]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[98]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[98]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[97]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[97]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[96]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[96]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[95]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[95]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[94]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[94]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[93]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[93]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[92]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[92]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[91]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[91]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[90]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[90]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[89]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[89]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[88]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[88]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[87]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[87]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[86]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[86]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[85]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[85]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[84]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[84]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[83]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[83]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[82]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[82]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[81]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[81]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[80]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[80]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[79]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[79]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[78]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[78]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[77]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[77]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[76]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[76]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[75]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[75]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[74]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[74]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[73]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[73]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[72]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[72]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[71]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[71]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[70]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[70]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[69]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[69]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[68]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[68]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[67]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[67]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[66]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[66]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[65]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[65]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[64]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[64]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[63]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[63]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[62]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[62]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[61]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[61]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[60]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[60]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[59]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[59]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[58]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[58]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[57]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[57]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[56]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[56]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[55]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'u1/B_mes_ex_reg[55]/Q' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[54]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[53]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (B_mes_ex_reg[52]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:46]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[104]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[103]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[102]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[101]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[100]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[99]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[98]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[97]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[96]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[95]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[94]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[93]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[92]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[91]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[90]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[89]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[88]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[87]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[86]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[85]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[84]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[83]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[82]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[81]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[80]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[79]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[78]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[77]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[76]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[75]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[74]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[73]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[72]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[71]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[70]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[69]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[68]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[67]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[66]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[65]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[64]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[63]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[62]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[61]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[60]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[59]) is unused and will be removed from module add.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+WARNING: [Synth 8-3332] Sequential element (A_mes_ex_reg[58]) is unused and will be removed from module add.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [E:/FPU/FPU.srcs/sources_1/new/add.vhd:40]
+INFO: [Common 17-14] Message 'Synth 8-6858' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+ Sort Area is  u3/multOp_7 : 0 0 : 3236 9727 : Used 1 time 0
+ Sort Area is  u3/multOp_7 : 0 1 : 3236 9727 : Used 1 time 0
+ Sort Area is  u3/multOp_7 : 0 2 : 3255 9727 : Used 1 time 0
+ Sort Area is  u3/multOp_4 : 0 0 : 3236 9573 : Used 1 time 0
+ Sort Area is  u3/multOp_4 : 0 1 : 3101 9573 : Used 1 time 0
+ Sort Area is  u3/multOp_4 : 0 2 : 3236 9573 : Used 1 time 0
+ Sort Area is  u3/multOp_0 : 0 0 : 3101 9322 : Used 1 time 0
+ Sort Area is  u3/multOp_0 : 0 1 : 3120 9322 : Used 1 time 0
+ Sort Area is  u3/multOp_0 : 0 2 : 3101 9322 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|main        | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|main        | PCIN+A*B       | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|main        | (PCIN>>17)+A*B | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|main        | A*B            | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|main        | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|main        | PCIN+A*B       | 20     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|main        | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|main        | (PCIN>>17)+A*B | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|main        | PCIN+A*B       | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     3|
+|3     |LUT1   |    14|
+|4     |LUT2   |     7|
+|5     |LUT3   |     6|
+|6     |LUT4   |     6|
+|7     |LUT5   |     6|
+|8     |LUT6   |    20|
+|9     |LD     |    89|
+|10    |IBUF   |     5|
+|11    |OBUF   |    64|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   221|
+|2     |  u1     |add    |    34|
+|3     |  u2     |min    |    45|
+|4     |  u3     |mul    |    36|
+|5     |  u4     |div    |    36|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1538.270 ; gain = 863.684
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 762 critical warnings and 1304 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1538.270 ; gain = 863.684
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1538.270 ; gain = 863.684
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1542.527 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 92 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1567.414 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 89 instances were transformed.
+  LD => LDCE: 89 instances
+
+Synth Design complete | Checksum: 13864be3
+INFO: [Common 17-83] Releasing license: Synthesis
+36 Infos, 241 Warnings, 200 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1567.414 ; gain = 892.832
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1567.414 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/FPU/FPU.runs/synth_1/main.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Nov  3 00:55:10 2024...

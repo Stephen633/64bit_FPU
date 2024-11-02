@@ -1,0 +1,486 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1.2 (win64) Build 5164865 Thu Sep  5 14:37:11 MDT 2024
+| Date         : Sun Nov  3 00:57:04 2024
+| Host         : DESKTOP-AI2GDSL running 64-bit major release  (build 9200)
+| Command      : report_methodology -file main_methodology_drc_routed.rpt -pb main_methodology_drc_routed.pb -rpx main_methodology_drc_routed.rpx
+| Design       : main
+| Device       : xa7z020clg400-1I
+| Speed File   : -1I
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 90
++-----------+----------+--------------------------------+------------+
+| Rule      | Severity | Description                    | Violations |
++-----------+----------+--------------------------------+------------+
+| TIMING-20 | Warning  | Non-clocked latch              | 89         |
+| LATCH-1   | Advisory | Existing latches in the design | 1          |
++-----------+----------+--------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[53] cannot be properly analyzed as its control pin u1/res_exp_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[54] cannot be properly analyzed as its control pin u1/res_exp_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[55] cannot be properly analyzed as its control pin u1/res_exp_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[56] cannot be properly analyzed as its control pin u1/res_exp_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[57] cannot be properly analyzed as its control pin u1/res_exp_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[58] cannot be properly analyzed as its control pin u1/res_exp_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[59] cannot be properly analyzed as its control pin u1/res_exp_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[60] cannot be properly analyzed as its control pin u1/res_exp_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[61] cannot be properly analyzed as its control pin u1/res_exp_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[62] cannot be properly analyzed as its control pin u1/res_exp_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch u1/res_exp_reg[63] cannot be properly analyzed as its control pin u1/res_exp_reg[63]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch u1/result_reg[52] cannot be properly analyzed as its control pin u1/result_reg[52]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch u1/result_reg[53] cannot be properly analyzed as its control pin u1/result_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch u1/result_reg[54] cannot be properly analyzed as its control pin u1/result_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch u1/result_reg[55] cannot be properly analyzed as its control pin u1/result_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch u1/result_reg[56] cannot be properly analyzed as its control pin u1/result_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch u1/result_reg[57] cannot be properly analyzed as its control pin u1/result_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch u1/result_reg[58] cannot be properly analyzed as its control pin u1/result_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch u1/result_reg[59] cannot be properly analyzed as its control pin u1/result_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch u1/result_reg[60] cannot be properly analyzed as its control pin u1/result_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch u1/result_reg[61] cannot be properly analyzed as its control pin u1/result_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch u1/result_reg[62] cannot be properly analyzed as its control pin u1/result_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[53] cannot be properly analyzed as its control pin u2/res_exp_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[54] cannot be properly analyzed as its control pin u2/res_exp_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[55] cannot be properly analyzed as its control pin u2/res_exp_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[56] cannot be properly analyzed as its control pin u2/res_exp_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[57] cannot be properly analyzed as its control pin u2/res_exp_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[58] cannot be properly analyzed as its control pin u2/res_exp_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[59] cannot be properly analyzed as its control pin u2/res_exp_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[60] cannot be properly analyzed as its control pin u2/res_exp_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[61] cannot be properly analyzed as its control pin u2/res_exp_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[62] cannot be properly analyzed as its control pin u2/res_exp_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch u2/res_exp_reg[63] cannot be properly analyzed as its control pin u2/res_exp_reg[63]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch u2/result_reg[52] cannot be properly analyzed as its control pin u2/result_reg[52]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch u2/result_reg[53] cannot be properly analyzed as its control pin u2/result_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch u2/result_reg[54] cannot be properly analyzed as its control pin u2/result_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch u2/result_reg[55] cannot be properly analyzed as its control pin u2/result_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch u2/result_reg[56] cannot be properly analyzed as its control pin u2/result_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch u2/result_reg[57] cannot be properly analyzed as its control pin u2/result_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch u2/result_reg[58] cannot be properly analyzed as its control pin u2/result_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch u2/result_reg[59] cannot be properly analyzed as its control pin u2/result_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch u2/result_reg[60] cannot be properly analyzed as its control pin u2/result_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch u2/result_reg[61] cannot be properly analyzed as its control pin u2/result_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch u2/result_reg[62] cannot be properly analyzed as its control pin u2/result_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[53] cannot be properly analyzed as its control pin u3/res_exp_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[54] cannot be properly analyzed as its control pin u3/res_exp_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[55] cannot be properly analyzed as its control pin u3/res_exp_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[56] cannot be properly analyzed as its control pin u3/res_exp_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[57] cannot be properly analyzed as its control pin u3/res_exp_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[58] cannot be properly analyzed as its control pin u3/res_exp_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[59] cannot be properly analyzed as its control pin u3/res_exp_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[60] cannot be properly analyzed as its control pin u3/res_exp_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[61] cannot be properly analyzed as its control pin u3/res_exp_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[62] cannot be properly analyzed as its control pin u3/res_exp_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch u3/res_exp_reg[63] cannot be properly analyzed as its control pin u3/res_exp_reg[63]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch u3/result_reg[52] cannot be properly analyzed as its control pin u3/result_reg[52]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch u3/result_reg[53] cannot be properly analyzed as its control pin u3/result_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch u3/result_reg[54] cannot be properly analyzed as its control pin u3/result_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch u3/result_reg[55] cannot be properly analyzed as its control pin u3/result_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch u3/result_reg[56] cannot be properly analyzed as its control pin u3/result_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch u3/result_reg[57] cannot be properly analyzed as its control pin u3/result_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch u3/result_reg[58] cannot be properly analyzed as its control pin u3/result_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch u3/result_reg[59] cannot be properly analyzed as its control pin u3/result_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch u3/result_reg[60] cannot be properly analyzed as its control pin u3/result_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch u3/result_reg[61] cannot be properly analyzed as its control pin u3/result_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch u3/result_reg[62] cannot be properly analyzed as its control pin u3/result_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[53] cannot be properly analyzed as its control pin u4/res_exp_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[54] cannot be properly analyzed as its control pin u4/res_exp_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[55] cannot be properly analyzed as its control pin u4/res_exp_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[56] cannot be properly analyzed as its control pin u4/res_exp_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[57] cannot be properly analyzed as its control pin u4/res_exp_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[58] cannot be properly analyzed as its control pin u4/res_exp_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[59] cannot be properly analyzed as its control pin u4/res_exp_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[60] cannot be properly analyzed as its control pin u4/res_exp_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[61] cannot be properly analyzed as its control pin u4/res_exp_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[62] cannot be properly analyzed as its control pin u4/res_exp_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch u4/res_exp_reg[63] cannot be properly analyzed as its control pin u4/res_exp_reg[63]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch u4/result_reg[52] cannot be properly analyzed as its control pin u4/result_reg[52]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch u4/result_reg[53] cannot be properly analyzed as its control pin u4/result_reg[53]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch u4/result_reg[54] cannot be properly analyzed as its control pin u4/result_reg[54]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch u4/result_reg[55] cannot be properly analyzed as its control pin u4/result_reg[55]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch u4/result_reg[56] cannot be properly analyzed as its control pin u4/result_reg[56]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch u4/result_reg[57] cannot be properly analyzed as its control pin u4/result_reg[57]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch u4/result_reg[58] cannot be properly analyzed as its control pin u4/result_reg[58]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch u4/result_reg[59] cannot be properly analyzed as its control pin u4/result_reg[59]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch u4/result_reg[60] cannot be properly analyzed as its control pin u4/result_reg[60]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch u4/result_reg[61] cannot be properly analyzed as its control pin u4/result_reg[61]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch u4/result_reg[62] cannot be properly analyzed as its control pin u4/result_reg[62]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch u4/result_reg[63] cannot be properly analyzed as its control pin u4/result_reg[63]/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 89 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

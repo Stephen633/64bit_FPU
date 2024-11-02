@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.2 (64-bit)
+# SW Build 5164865 on Thu Sep  5 14:37:11 MDT 2024
+# IP Build 5164407 on Fri Sep  6 08:18:11 MDT 2024
+# SharedData Build 5164864 on Thu Sep 05 13:09:09 MDT 2024
+# Start of session at: Sun Nov  3 00:53:59 2024
+# Process ID: 15848
+# Current directory: E:/FPU/FPU.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: E:/FPU/FPU.runs/synth_1/main.vds
+# Journal file: E:/FPU/FPU.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-AI2GDSL
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+# CPU Frequency     :2099 MHz
+# CPU Physical cores:16
+# CPU Logical cores :32
+# Host memory       :51457 MB
+# Swap memory       :7516 MB
+# Total Virtual     :58973 MB
+# Available Virtual :47406 MB
+#-----------------------------------------------------------
+source main.tcl -notrace
